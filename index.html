@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f4c81">
+  <title>Laverie Maintenance</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="bar">
+    <button id="back" aria-label="Retour">‹</button>
+    <h1 id="title">Laverie</h1>
+    <button id="syncBtn" aria-label="Synchroniser"><span id="syncDot"></span></button>
+  </header>
+  <main id="view"></main>
+  <nav id="tabs">
+    <a href="#/" data-tab="home"><span>🏠</span>Laveries</a>
+    <a href="#/echeances" data-tab="echeances"><span>⏰</span>Échéances</a>
+    <a href="#/pieces" data-tab="pieces"><span>📦</span>Pièces</a>
+    <a href="#/reglages" data-tab="reglages"><span>⚙️</span>Réglages</a>
+  </nav>
+  <div id="toast"></div>
+  <script src="vendor/jspdf.umd.min.js"></script>
+  <script src="vendor/jspdf.plugin.autotable.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
